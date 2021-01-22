@@ -84,3 +84,4 @@ $ pip install -U PyYAML
 $ python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/fast_res50_256x192.pth --indir examples/demo/ --save_img
 
 ```
+2. Output Images & json file will save in bydefault **AlphaPose/examples/res** folder.
