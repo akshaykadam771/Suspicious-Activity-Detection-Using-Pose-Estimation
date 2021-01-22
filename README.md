@@ -1,5 +1,7 @@
 ## :movie_camera: :running: :running: Suspicious-Activity-Detection-Using-Pose-Estimation
 
+![ezgif com-optimize](https://user-images.githubusercontent.com/62059604/105457061-39df5500-5cac-11eb-94a7-0a6c56037175.gif)
+
 ## 📝 Description
 - This implemantation is based on official **AlphaPose** Pose Estimation Algorithm.
 - It is **‘AlphaPose’** & **‘XGBOOST’** based **“Suspicious-Activity-Detection-Using-Pose Estimation”** project.
@@ -39,49 +41,60 @@
 ## :gear: Setup on Colab
 1. Install PyTorch :-
 ```bash
-$ pip3 install torch==1.1.0 torchvision==0.3.0
+$ !pip3 install torch==1.1.0 torchvision==0.3.0
 
 ```
 
 2. Git Clone :-
 ```bash
-$ git clone https://github.com/akshaykadam771/Suspicious-Activity-Detection-Using-Pose-Estimation.git 
+$ !git clone https://github.com/akshaykadam771/Suspicious-Activity-Detection-Using-Pose-Estimation.git 
 
 ```
 
 3. Install :-
 ```bash
-$ export PATH=/usr/local/cuda/bin/:$PATH
+$ !export PATH=/usr/local/cuda/bin/:$PATH
 
 ```
 ```bash
-$ export LD_LIBRARY_PATH=/usr/local/cuda/lib64/:$LD_LIBRARY_PATH
+$ !export LD_LIBRARY_PATH=/usr/local/cuda/lib64/:$LD_LIBRARY_PATH
 
 ```
 ```bash
-$ pip install cython
+$ !pip install cython
 
 ```
 ```bash
-$ sudo apt-get install libyaml-dev
+$ !sudo apt-get install libyaml-dev
 
 ```
 ```bash
-$ python setup.py build develop --user
+$ !python setup.py build develop --user
 
 ```
 ```bash
-$ python -m pip install Pillow==6.2.1
+$ !python -m pip install Pillow==6.2.1
 
 ```
 ```bash
-$ pip install -U PyYAML
+$ !pip install -U PyYAML
 
 ```
 ## 🎯 Inference 
 1. Testing with **Images** ( Put test images in **AlphaPose/examples/demo/** )  :-
 ```bash
-$ python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/fast_res50_256x192.pth --indir examples/demo/ --save_img
+$ !python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/fast_res50_256x192.pth --indir examples/demo/ --save_img
 
 ```
 2. Output Images & json file will save in bydefault **AlphaPose/examples/res** folder.
+
+3. Testing with **Videos**  :-
+```bash
+$ !python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/fast_res50_256x192.pth --video examples/video/demo5.mp4 --outdir examples/res --save_video --gpus 0
+
+```
+3. If it is giving memory error during **Videos** testing you can add  **--sp**  argument in command which enable Single processing :-
+```bash
+$ !python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/fast_res50_256x192.pth --video examples/video/demo5.mp4 --outdir examples/res --save_video --gpus 0 --sp
+
+```
