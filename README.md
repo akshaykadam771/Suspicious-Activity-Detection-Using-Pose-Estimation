@@ -1,7 +1,7 @@
 ## :movie_camera: :running: :running: Suspicious-Activity-Detection-Using-Pose-Estimation
 
 ## 📝 Description
-- This implemantation is based on official **AlphaPose** Algorithm.
+- This implemantation is based on official **AlphaPose** Pose Estimation Algorithm.
 - It is **‘AlphaPose’** & **‘XGBOOST’** based **“Suspicious-Activity-Detection-Using-Pose Estimation”** project.
 - Purpose of this project is to make a system which can detect if someone is trying to Climb a house compound wall, Climbing on Fence, Climbing on gate & trying    to do some suspicious activity.
 - This model will detect this activities accurately & helps to prevent those kind of activities by giving real time feedback.
@@ -42,7 +42,14 @@
 $ pip3 install torch==1.1.0 torchvision==0.3.0
 
 ```
-2. Install :-
+
+2. Git Clone :-
+```bash
+$ git clone https://github.com/akshaykadam771/Suspicious-Activity-Detection-Using-Pose-Estimation.git 
+
+```
+
+3. Install :-
 ```bash
 $ export PATH=/usr/local/cuda/bin/:$PATH
 
