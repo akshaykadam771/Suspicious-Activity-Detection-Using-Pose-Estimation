@@ -99,5 +99,7 @@ $ !python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e
 
 ```
 ## :open_file_folder: Json Dataset for training your own custom ML model :wrench: :nut_and_bolt: :hammer:	
+
 - **Drive Link** :- https://drive.google.com/file/d/1sTJkWBmuE6iBi_mCAs1DJ-KR6MnoZD7-/view?usp=sharing
+- This CSV file contaning 17 keypoints (Total 17x2=34 ) of Human body part as columns for each individual person while performing this 2 activities :-                **1) Climbing  2)Standing**
 - **Action** :- 0 = Climbing & 1 = Standing
