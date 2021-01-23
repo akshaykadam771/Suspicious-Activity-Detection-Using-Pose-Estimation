@@ -98,3 +98,6 @@ $ !python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e
 $ !python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/fast_res50_256x192.pth --video examples/video/demo5.mp4 --outdir examples/res --save_video --gpus 0 --sp
 
 ```
+## :open_file_folder: Json Dataset for training your own custom ML model :wrench: :nut_and_bolt: :hammer:	
+- **Drive Link** :- https://drive.google.com/file/d/1sTJkWBmuE6iBi_mCAs1DJ-KR6MnoZD7-/view?usp=sharing
+- **Action** :- 0 = Climbing & 1 = Standing
